@@ -1,0 +1,71 @@
+/* Reset browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: url('fon.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    text-align: left;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+/* Title styling */
+.title {
+    color: #0000FF;
+    font-family: 'Typewriter', monospace;
+    font-size: 48pt;
+    font-weight: bold;
+}
+
+/* Image section */
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Links section */
+.links-section {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .container {
+        padding: 10px;
+    }
+    
+    .title {
+        font-size: 36pt;
+    }
+
+    .links-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
